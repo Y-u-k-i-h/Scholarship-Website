@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body class="relative bg-white text-gray-800 min-h-screen flex items-center justify-center p-6">
+
+  <!-- Background image -->
+  <div class="absolute inset-0 -z-10 bg-[url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center opacity-20"></div>
+
+  <!-- Contact Form Container -->
+  <div class="w-full max-w-md space-y-6 bg-white bg-opacity-90 backdrop-blur-md p-8 rounded-xl shadow-xl">
+    <h1 class="text-3xl font-bold text-center">Contact Us</h1>
+    <form action="#" method="POST" class="space-y-4">
+      <div>
+        <label for="name" class="block text-sm font-medium">Name</label>
+        <input type="text" id="name" name="name" required
+               class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium">Email</label>
+        <input type="email" id="email" name="email" required
+               class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div>
+        <label for="message" class="block text-sm font-medium">Message</label>
+        <textarea id="message" name="message" rows="4" required
+                  class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+      <button type="submit"
+              class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200">
+        Send Message
+      </button>
+    </form>
+  </div>
