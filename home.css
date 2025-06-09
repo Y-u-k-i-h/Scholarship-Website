@@ -98,7 +98,7 @@ color: white;
 
 .hero-section {
 background: linear-gradient(to right, #667eea 0%, #764ba2 100%);
-color: white;
+color: rgb(10, 7, 7);
 padding: 80px 20px;
 text-align: center;
 position: relative;
