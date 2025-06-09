@@ -1,113 +1,97 @@
-*{
- box-sizing: border-box;
- margin:0;
- padding:0;
- font-family: 'Segoe UI', sans-serif; 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  background: #000;
+  position: relative;
 }
 
-.background-image{
+.background-image {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
   object-fit: cover;
-  filter: blur(1px);
+  filter: blur(2px);
   z-index: -1;
 }
 
-body, html{
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: Arial, sans-serif;
-  position: relative;
-  overflow: hidden;
-}
-
-.login-card{
-  max-width: 400px;
+.form-card {
   width: 90%;
-  margin: auto;
-  padding: 2rem;
+  max-width: 340px;
+  padding: 1.5rem;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(15px);
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.2);
   text-align: center;
-  position: relative;
   z-index: 1;
-  margin-top: 15vh;
-  margin-bottom: 15vh;
 }
 
-.login-card h2 {
- color: #fff;
- margin-bottom: 1rem;
-}
-
-form input {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: none;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.2);
+.form-card h1 {
   color: white;
-}
-
-form input::placeholder {
-  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  gap: 0.8rem;
 }
 
 label {
+  color: white;
   text-align: left;
-  margin: 10px 0 5px;
-  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 input[type="email"],
+input[type="text"],
 input[type="password"] {
-  padding: 12px;
+  padding: 10px;
   border: none;
-  border-radius: 8px;
-  font-size: 15px;
+  border-radius: 6px;
+  font-size: 14px;
   background: rgba(255, 255, 255, 0.2);
-  color: #060606;
+  color: #000;
+  width: 100%;
 }
 
 input::placeholder {
-  color: #000000b3;
+  color: rgba(0, 0, 0, 0.7);
 }
 
-.options {
+.input-row {
   display: flex;
-  flex-direction: column; 
-  align-items: flex-start; 
-  font-size: 0.85rem;
-  color: rgb(0, 0, 0);
-  margin-bottom: 1rem;
-  gap: 8px;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
+.input-group {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.options,
 .remember-label {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-  gap:12px;
-  color: rgb(0, 0, 0);
+  font-size: 0.75rem;
+  color: white;
+  text-align: left;
 }
 
 .forgot-password {
@@ -115,25 +99,17 @@ input::placeholder {
   text-decoration: none;
 }
 
-
-.options a {
-  color: rgb(187, 29, 29);
-  text-decoration: none;
-}
-
-.login-btn {
-  color:#2563eb ;
-  padding: 5px;
+.display-btn {
+  background: #2563eb;
+  color: white;
+  padding: 10px;
   border: none;
   border-radius: 6px;
   font-size: 15px;
-  margin: 15px;
   cursor: pointer;
-  width: 90%;
-  
 }
 
-.login-btn:hover {
+.display-btn:hover {
   background: #1e40af;
 }
 
@@ -142,8 +118,8 @@ input::placeholder {
   align-items: center;
   text-align: center;
   color: #ccc;
-  margin: 20px 0;
-  font-size: 14px;
+  margin: 0.8rem 0;
+  font-size: 13px;
 }
 
 .divider::before,
@@ -152,50 +128,51 @@ input::placeholder {
   flex: 1;
   height: 1px;
   background: #ccc;
-  margin: 0 10px;
+  margin: 0 8px;
 }
 
 .social-buttons {
   display: flex;
-  gap: 10px; 
-  margin-top: 10px;
+  gap: 8px;
+  justify-content: center;
 }
 
 .social-buttons button {
-  width: 50%;
-  margin: 5px ;
-  padding: 5px;
+  flex: 1;
+  padding: 8px;
   border: none;
   border-radius: 6px;
-  font-size: 15px;
   cursor: pointer;
+  font-size: 14px;
+}
+
+.google {
+  background: #fff;
+  color: #444;
 }
 
 .google:hover {
   background: #db4437;
-}
-
-.google {
-  
-  color: #693f3b;
-}
-
-.facebook:hover {
-  background:#1877f2 ;
+  color: white;
 }
 
 .facebook {
-  
-  color: #365781;
+  background: #fff;
+  color: #444;
 }
 
-
-.signup-text {
-  margin-top: 20px;
-  font-size: 14px;
+.facebook:hover {
+  background: #1877f2;
+  color: white;
 }
 
-.signup-text a {
+.display-text {
+  color: white;
+  font-size: 13px;
+  margin-top: 0.8rem;
+}
+
+.display-text a {
   color: #90cdf4;
   text-decoration: none;
 }
