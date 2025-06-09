@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - Scholarship Website</title>
+    <link rel="stylesheet" href="programs.css">
+   
+</head>
+<body>
+    <nav class="nav-bar">
+        
+        <div class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="programs.html" class="active">PROGRAMS</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="Contactus.html">CONTACTS</a>
+        </div>
+        <div class="auth-links">
+            <a href="login.html" class="login">Login</a>
+            <a href="signup.html" class="signup">Sign Up</a>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1 class="page-title">Scholarship Programs</h1>
+        <p class="page-subtitle">Discover thousands of scholarship opportunities from top universities worldwide. Find the perfect program that matches your academic goals and career aspirations.</p>
+        <div class="breadcrumb">
+            <a href="home.html">Home</a>
+            <span>›</span>
+            <span>Programs</span>
+        </div>
+    </header>
+
+    <section class="filter-bar">
+        <div class="filter-container">
+            <div class="filter-group">
+                <label class="filter-label">Study Level</label>
+                <select class="filter-select">
+                    <option>All Levels</option>
+                    <option>Undergraduate</option>
+                    <option>Graduate</option>
+                    <option>PhD</option>
+                    <option>Postdoc</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">Field of Study</label>
+                <select class="filter-select">
+                    <option>All Fields</option>
+                    <option>Engineering</option>
+                    <option>Computer Science</option>
+                    <option>Medicine</option>
+                    <option>Business</option>
+                    <option>Arts & Humanities</option>
+                    <option>Sciences</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">Country</label>
+                <select class="filter-select">
+                    <option>All Countries</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Canada</option>
+                    <option>Australia</option>
+                    <option>Germany</option>
+                    <option>Japan</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">Funding Type</label>
+                <select class="filter-select">
+                    <option>All Types</option>
+                    <option>Full Funding</option>
+                    <option>Partial Funding</option>
+                    <option>Tuition Only</option>
+                    <option>Living Expenses</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="quick-filters">
+            <a href="#" class="quick-filter active">All Programs</a>
+            <a href="#" class="quick-filter">Full Scholarships</a>
+            <a href="#" class="quick-filter">STEM Fields</a>
+            <a href="#" class="quick-filter">International Students</a>
+            <a href="#" class="quick-filter">Merit Based</a>
+            <a href="#" class="quick-filter">Need Based</a>
+            <a href="#" class="quick-filter">Research Focused</a>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="results-header">
+            <div class="results-count">
+                Showing <strong>1-12</strong> of <strong>2,847</strong> scholarship programs
+            </div>
+            <div class="sort-options">
+                <span class="sort-label">Sort by:</span>
+                <select class="sort-select">
+                    <option>Relevance</option>
+                    <option>Deadline (Nearest)</option>
+                    <option>Funding Amount</option>
+                    <option>University Ranking</option>
+                    <option>Recently Added</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- ⭐Featured Programs Section -->
+        <section class="featured-section">
+            <div class="featured-header">
+                <h2 class="featured-title">⭐ Featured Programs</h2>
+                <p class="featured-subtitle">Hand-picked opportunities with exceptional benefits and high success rates</p>
+            </div>
+
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="featured-badge">⭐ Featured</div>
+                    <div class="program-header">
+                        <div class="program-meta">
+                            <img src="image/university-1.webp"class="university-logo">
+                            <div class="program-badges">
+                                <span class="badge badge-level">Graduate</span>
+                                <span class="badge badge-type">Full Funding</span>
+                                <span class="badge badge-deadline">Mar 15</span>
+                            </div>
+                        </div>
+                        <h3 class="program-title">Benjamin Franklin Fellowship</h3>
+                        <div class="university-name">University of Pennsylvania</div>
+                        <div class="program-location">📍 Philadelphia, PA, USA</div>
+                    </div>
+                    <div class="program-body">
+                        <p class="program-description">
+                            Prestigious fellowship covering full tuition, living expenses, and research funding for exceptional graduate students in all fields. Includes mentorship opportunities and networking events.
+                        </p>
+                        <div class="program-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Funding Amount</span>
+                                <span class="detail-value">$65,000/year</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Duration</span>
+                                <span class="detail-value">5 years</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Eligibility</span>
+                                <span class="detail-value">International</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">GPA Requirement</span>
+                                <span class="detail-value">3.8+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="program-footer">
+                        <div class="program-actions">
+                            <a href="#" class="btn btn-primary">Apply Now</a>
+                            
+                        </div>
+                        <button class="bookmark-btn" title="Bookmark">♡</button>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="featured-badge">⭐ Featured</div>
+                    <div class="program-header">
+                        <div class="program-meta">
+                            <img src="image/university-2.jpg" class="university-logo">
+                            <div class="program-badges">
+                                <span class="badge badge-level">PhD</span>
+                                <span class="badge badge-type">Research</span>
+                                <span class="badge badge-deadline">Dec 1</span>
+                            </div>
+                        </div>
+                        <h3 class="program-title">MIT Presidential Fellowship</h3>
+                        <div class="university-name">Massachusetts Institute of Technology</div>
+                        <div class="program-location">📍 Cambridge, MA, USA</div>
+                    </div>
+                    <div class="program-body">
+                        <p class="program-description">
+                            Elite fellowship for outstanding PhD students in STEM fields. Provides full financial support plus additional research funds and access to cutting-edge facilities.
+                        </p>
+                        <div class="program-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Funding Amount</span>
+                                <span class="detail-value">$75,000/year</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Duration</span>
+                                <span class="detail-value">6 years</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Eligibility</span>
+                                <span class="detail-value">All Students</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Research Fund</span>
+                                <span class="detail-value">$25,000/year</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="program-footer">
+                        <div class="program-actions">
+                            <a href="#" class="btn btn-primary">Apply Now</a>
+                            
+                        </div>
+                        <button class="bookmark-btn" title="Bookmark">♡</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regular Programs -->
+        <div class="programs-grid">
+            <div class="program-card">
+                <div class="program-header">
+                    <div class="program-meta">
+                        <img src="image/university-4.jpeg" class="university-logo">
+                        <div class="program-badges">
+                            <span class="badge badge-level">Graduate</span>
+                            <span class="badge badge-type">Merit</span>
+                            <span class="badge badge-deadline">Jan 15</span>
+                        </div>
+                    </div>
+                    <h3 class="program-title">Stanford Graduate Fellowship</h3>
+                    <div class="university-name">Stanford University</div>
+                    <div class="program-location">📍 Stanford, CA, USA</div>
+                </div>
+                <div class="program-body">
+                    <p class="program-description">
+                        Comprehensive funding for outstanding graduate students across all disciplines. Includes tuition, stipend, and health insurance for the first year of study.
+                    </p>
+                    <div class="program-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Funding Amount</span>
+                            <span class="detail-value">$55,000/year</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Duration</span>
+                            <span class="detail-value">1-3 years</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Eligibility</span>
+                            <span class="detail-value">All Students</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">GPA Requirement</span>
+                            <span class="detail-value">3.7+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-footer">
+                    <div class="program-actions">
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                        
+                    </div>
+                    <button class="bookmark-btn" title="Bookmark">♡</button>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div class="program-meta">
+                        <img src="image/university-5.jpg" class="university-logo">
+                        <div class="program-badges">
+                            <span class="badge badge-level">Graduate</span>
+                            <span class="badge badge-type">Merit</span>
+                            <span class="badge badge-deadline">Dec 1</span>
+                        </div>
+                    </div>
+                    <h3 class="program-title">Harvard GSAS Merit Fellowship</h3>
+                    <div class="university-name">Harvard University</div>
+                    <div class="program-location">📍Cambridge, MA, USA</div>
+                </div>
+                
+                <div class="program-body">
+                    <p class="program-description">Competitive fellowship supporting high-achieving graduate students across sciences and humanities.
+                    </p>
+                    <div class="program-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Funding Amount</span>
+                            <span class="detail-value">$50,000/year</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Duration</span>
+                            <span class="detail-value">2 Years</span>                        
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Eligibility</span>
+                            <span class="detail-value">Domestic and International Students</span>                            
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">GPA Requirement</span>
+                            <span class="detail-value">3.8+</span>
+                        </div>
+                            
+                    </div>
+                </div>
+                    <div class="program-footer">
+                        <div class="program-actions">
+                            <a href="#" class="btn btn-primary">Apply now</a>
+                            
+                        </div>
+                        <button class="bookmark-btn">♡</button>
+                    </div>
+            </div>
+            <div class="program-card">
+                <div class="program-header">
+                    <div class="program-meta">
+                        <img src="image/university-6.jpg" class="university-logo">
+                        <div class="program-badges">
+                            <span class="badge badge-level">Graduate</span>
+                            <span class="badge badge-type">Need-Based</span>
+                            <span class="badge badge-deadline">Dec 15</span>
+                        </div>
+                    </div>
+                    <h3 class="program-title">Berkeley Graduate Fellowship</h3>
+                    <div class="university-name">University of California, Berkeley</div>
+                    <div class="program-location">📍 Berkeley, CA, USA</div>
+                </div>
+                <div class="program-body">
+                    <p class="program-description">
+                        Provides comprehensive support to students demonstrating exceptional academic and financial need.
+                    </p>
+                    <div class="program-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Funding Amount</span>
+                            <span class="detail-value">$45,000/year</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Duration</span>
+                            <span class="detail-value">1-2 years</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Eligibility</span>
+                            <span class="detail-value">U.S. Citizens & Residents</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">GPA Requirement</span>
+                            <span class="detail-value">3.5+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-footer">
+                    <div class="program-actions">
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                        
+                    </div>
+                    <button class="bookmark-btn" title="Bookmark">♡</button>
+                </div>
+            </div>
+            <div class="program-card">
+                <div class="program-header">
+                    <div class="program-meta">
+                        <img src="image/university-7.jpeg" class="university-logo">
+                        <div class="program-badges">
+                            <span class="badge badge-level">Graduate</span>
+                            <span class="badge badge-type">Merit</span>
+                            <span class="badge badge-deadline">Dec 1</span>
+                        </div>
+                    </div>
+                    <h3 class="program-title">Todai International Graduate Fellowship</h3>
+                    <div class="university-name">University of Tokyo</div>
+                    <div class="program-location">📍 Tokyo, Japan</div>
+                </div>
+                <div class="program-body">
+                    <p class="program-description">
+                        A prestigious fellowship for international students pursuing graduate studies in science, technology, and public policy.
+                    </p>
+                    <div class="program-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Funding Amount</span>
+                            <span class="detail-value">¥2,000,000/year</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Duration</span>
+                            <span class="detail-value">2 years</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Eligibility</span>
+                            <span class="detail-value">International Students</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">GPA Requirement</span>
+                            <span class="detail-value">3.6+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-footer">
+                    <div class="program-actions">
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                        
+                    </div>
+                    <button class="bookmark-btn" title="Bookmark">♡</button>
+                </div>
+            </div>
+
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div class="program-meta">
+                        <img src="image/university-8.jpeg" class="university-logo">
+                        <div class="program-badges">
+                            <span class="badge badge-level">Graduate</span>
+                            <span class="badge badge-type">Merit</span>
+                            <span class="badge badge-deadline">Jan 10</span>
+                        </div>
+                    </div>
+                    <h3 class="program-title">President's Graduate Scholarship</h3>
+                    <div class="university-name">University of Waterloo</div>
+                    <div class="program-location">📍 Waterloo, ON, Canada</div>
+                </div>
+                <div class="program-body">
+                    <p class="program-description">
+                        Supports graduate students with exceptional academic records and research potential in engineering and computer science.
+                    </p>
+                    <div class="program-details">
+                        <div class="detail-item"><span class="detail-label">Funding Amount</span><span class="detail-value">CAD $30,000/year</span></div>
+                        <div class="detail-item"><span class="detail-label">Duration</span><span class="detail-value">1-2 years</span></div>
+                        <div class="detail-item"><span class="detail-label">Eligibility</span><span class="detail-value">Canadian & International</span></div>
+                        <div class="detail-item"><span class="detail-label">GPA Requirement</span><span class="detail-value">3.7+</span></div>
+                    </div>
+                </div>
+                <div class="program-footer">
+                    <div class="program-actions">
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                        
+                    </div>
+                    <button class="bookmark-btn" title="Bookmark">♡</button>
+                </div>
+            </div>
+
+        <div class="program-card">
+            <div class="program-header">
+                <div class="program-meta">
+                    <img src="image/university-9.jpeg" class="university-logo">
+                    <div class="program-badges">
+                        <span class="badge badge-level">Graduate</span>
+                        <span class="badge badge-type">Full-Ride</span>
+                        <span class="badge badge-deadline">Jan 5</span>
+                    </div>
+                </div>
+                <h3 class="program-title">Clarendon Fund Scholarship</h3>
+                <div class="university-name">University of Oxford</div>
+                <div class="program-location">📍 Oxford, England, UK</div>
+            </div>
+            <div class="program-body">
+                <p class="program-description">
+                    Prestigious, fully-funded scholarship for academically excellent graduate students across all disciplines at Oxford.
+                </p>
+                <div class="program-details">
+                    <div class="detail-item"><span class="detail-label">Funding Amount</span><span class="detail-value">Full Tuition + Stipend</span></div>
+                    <div class="detail-item"><span class="detail-label">Duration</span><span class="detail-value">1-3 years</span></div>
+                    <div class="detail-item"><span class="detail-label">Eligibility</span><span class="detail-value">All Students</span></div>
+                    <div class="detail-item"><span class="detail-label">GPA Requirement</span><span class="detail-value">3.7+</span></div>
+                </div>
+            </div>
+            <div class="program-footer">
+                <div class="program-actions">
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                    
+                </div>
+                <button class="bookmark-btn" title="Bookmark">♡</button>
+            </div>
+        </div>
+        
+
+
+    </div>
+                        
+                    
